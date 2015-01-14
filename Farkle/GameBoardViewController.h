@@ -10,7 +10,8 @@
 #import "DieLabel.h"
 
 @interface GameBoardViewController : UIViewController
-@property NSArray *dice;
+@property NSMutableArray *dice;
+@property NSMutableArray *heldDice;
 
 
 @end

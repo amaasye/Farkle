@@ -18,13 +18,15 @@
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelSix;
 
 
+
 @end
 
 @implementation GameBoardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dice = [NSArray arrayWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
+    self.dice = [NSMutableArray arrayWithObjects:self.dieLabelOne, self.dieLabelTwo, self.dieLabelThree, self.dieLabelFour, self.dieLabelFive, self.dieLabelSix, nil];
+     self.heldDice = [[NSMutableArray alloc]init];
     for (DieLabel *dieLabel in self.dice) {
         dieLabel.delegate = self;
     }
@@ -32,12 +34,19 @@
 
 - (void)dieLabelWasTapped:(DieLabel *)dieLabel {
     dieLabel.backgroundColor = [UIColor purpleColor];
-    
+    [self.heldDice addObject:dieLabel];
+
 }
 
 - (IBAction)onRollDieButtonTapped:(UIButton *)sender {
+    for (DieLabel *dieLabel in self.heldDice) {
+        dieLabel.userInteractionEnabled = NO;
+    }
     for (DieLabel *dieLabel in self.dice) {
-        [dieLabel roll];
+        if (dieLabel.userInteractionEnabled == YES) {
+            [dieLabel roll];
+        }
+
     }
 }
 

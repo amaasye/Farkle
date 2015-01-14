@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelFour;
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelFive;
 @property (weak, nonatomic) IBOutlet DieLabel *dieLabelSix;
+@property (weak, nonatomic) IBOutlet UILabel *userOneScore;
+@property (weak, nonatomic) IBOutlet UILabel *userTwoScore;
+@property int scoreOne;
+@property int scoreTwo;
 
 
 
@@ -48,6 +52,8 @@
         }
 
     }
+}
+- (IBAction)onCollectButtonPressed:(UIButton *)sender {
 }
 
 

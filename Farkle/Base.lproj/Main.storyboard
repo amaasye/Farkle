@@ -65,12 +65,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="185" y="440" width="30" height="30"/>
+                                    <rect key="frame" x="185" y="486" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="onRollDieButtonTapped:" destination="tDy-dB-G7p" eventType="touchUpInside" id="43t-Fh-VRQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P14-NU-gkd" customClass="DieLabel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="184" width="70" height="70"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RZN-gL-Lcw" appends="YES" id="ueH-hE-msh"/>
+                                </connections>
+                            </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqM-0R-rXt" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +93,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="128" width="70" height="70"/>
+                                    <rect key="frame" x="231" y="184" width="70" height="70"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="wEv-LK-hOz" appends="YES" id="DI2-r9-Qt9"/>
@@ -93,7 +107,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="229" width="70" height="70"/>
+                                    <rect key="frame" x="100" y="285" width="70" height="70"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="jCt-LA-J63" appends="YES" id="mdg-Yt-KUP"/>
@@ -107,7 +121,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="229" width="70" height="70"/>
+                                    <rect key="frame" x="231" y="285" width="70" height="70"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="n3N-r1-8fT" appends="YES" id="Vhh-Ht-E0P"/>
@@ -121,7 +135,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="330" width="70" height="70"/>
+                                    <rect key="frame" x="100" y="386" width="70" height="70"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="5zD-VG-w7I" appends="YES" id="2Zu-Ct-mdb"/>
@@ -135,48 +149,70 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="330" width="70" height="70"/>
+                                    <rect key="frame" x="231" y="386" width="70" height="70"/>
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ayb-Zt-hAy" appends="YES" id="ykc-It-erb"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P14-NU-gkd" customClass="DieLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-lT-saE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="128" width="70" height="70"/>
+                                    <rect key="frame" x="47" y="113" width="62" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-xX-Rvi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="261" y="113" width="62" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXI-RF-fQx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Collect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="524" width="48" height="30"/>
                                 </variation>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="RZN-gL-Lcw" appends="YES" id="ueH-hE-msh"/>
+                                    <action selector="onCollectButtonPressed:" destination="tDy-dB-G7p" eventType="touchUpInside" id="R3C-Nr-DbW"/>
                                 </connections>
-                            </label>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="91v-Ls-GFY"/>
+                                <exclude reference="P14-NU-gkd"/>
                                 <exclude reference="EqM-0R-rXt"/>
                                 <exclude reference="EYU-b2-ji6"/>
                                 <exclude reference="nDx-UI-VaI"/>
                                 <exclude reference="Qbo-hE-ERQ"/>
                                 <exclude reference="pqy-Xi-FjX"/>
-                                <exclude reference="P14-NU-gkd"/>
+                                <exclude reference="8Ub-lT-saE"/>
+                                <exclude reference="G1f-xX-Rvi"/>
+                                <exclude reference="wXI-RF-fQx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="91v-Ls-GFY"/>
+                                <include reference="P14-NU-gkd"/>
                                 <include reference="EqM-0R-rXt"/>
                                 <include reference="EYU-b2-ji6"/>
                                 <include reference="nDx-UI-VaI"/>
                                 <include reference="Qbo-hE-ERQ"/>
                                 <include reference="pqy-Xi-FjX"/>
-                                <include reference="P14-NU-gkd"/>
+                                <include reference="8Ub-lT-saE"/>
+                                <include reference="G1f-xX-Rvi"/>
+                                <include reference="wXI-RF-fQx"/>
                             </mask>
                         </variation>
                     </view>
@@ -187,6 +223,8 @@
                         <outlet property="dieLabelSix" destination="pqy-Xi-FjX" id="haz-vW-VBP"/>
                         <outlet property="dieLabelThree" destination="EYU-b2-ji6" id="1KG-jF-aFj"/>
                         <outlet property="dieLabelTwo" destination="EqM-0R-rXt" id="TCT-di-Kpy"/>
+                        <outlet property="userOneScore" destination="8Ub-lT-saE" id="cSv-cV-YQW"/>
+                        <outlet property="userTwoScore" destination="G1f-xX-Rvi" id="sI3-AZ-mZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQi-KM-hvs" userLabel="First Responder" sceneMemberID="firstResponder"/>

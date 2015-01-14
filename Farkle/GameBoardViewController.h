@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GameBoardViewController.h
 //  Farkle
 //
 //  Created by Syed Amaanullah on 1/14/15.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DieLabel.h"
 
-@interface ViewController : UIViewController
+@interface GameBoardViewController : UIViewController
+@property NSArray *dice;
 
 
 @end
-

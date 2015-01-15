@@ -37,6 +37,7 @@
 }
 
 - (void)dieLabelWasTapped:(DieLabel *)dieLabel {
+    int score = [self.
     dieLabel.backgroundColor = [UIColor purpleColor];
     [self.heldDice addObject:dieLabel];
 
